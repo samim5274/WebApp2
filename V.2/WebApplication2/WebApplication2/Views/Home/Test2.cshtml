@@ -1,0 +1,11 @@
+﻿@Model IEnumberable<int>
+@{
+    ViewBag.Title = "Test2";
+}
+
+<h2>Test2</h2>
+
+@foreach (var s in Model)
+{
+    <h2 class="text-warning">@s</h2>
+}

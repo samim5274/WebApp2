@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Test";
+    var s = ViewBag.fruits;
+}
+
+
+<h2>Test</h2>
+<h2>@ViewBag.Message</h2>
+
+<div class="row">
+    <div class="col-md-8">
+        <h2 class="alert alert-success" id="cn">welcome my first web application</h2>
+    </div>
+</div>
+
+<div>
+    <button id="fin" class="btn btn-success">Fade In</button>
+    <button id="fout" class="btn btn-success">Fade Out</button>
+</div>
+
+@foreach (var item in ViewBag.fruits)
+{
+    <h3 class="text-info">@item</h3>
+}
+
+@*@for (int i = 0; i < 10; i++)
+    {
+        <h3>@s</h3>
+    }*@
+
+<h3>Fuck you!</h3>
+
+@section Scripts{
+
+    <script>
+        $(Document).ready(function () {
+            //alert('Its work');
+
+            $("#fin").click(function () {
+                $("#cn").hide();
+                $("#cn").fadeIn(5000);
+            });
+            $("#fout").click(function () {
+                $("#cn").show();
+                $("#cn").fadeOut(5000);
+            });
+
+        });
+    </script>
+
+
+}

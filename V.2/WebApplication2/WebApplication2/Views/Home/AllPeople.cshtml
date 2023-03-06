@@ -1,0 +1,31 @@
+﻿@model IEnumerable<WebApplication2.Models.Person>
+@{
+    ViewBag.Title = "AllPeople";
+}
+
+<h2 class="alert alert-info">AllPeople</h2>
+
+
+
+
+<div class="row">
+    <div>
+        <table class="table table-responsive table-hover ">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                    <tr><th>@obj.Id</th><th>@obj.Name</th><th>@obj.Age</th><th>@obj.Country</th></tr>
+                }
+            </tbody>
+            
+        </table>
+    </div>
+</div>
