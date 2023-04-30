@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Course";
+}
+
+<h2 class="alert alert-info">List of Course</h2>
+
+@if (ViewBag.list != null)
+{
+    foreach (var item in ViewBag.list)
+    {
+        <h1 class="text-primary">@item</h1>
+    }
+}
+else
+{
+    <h2 class="alert alert-danger">Data not found.</h2>
+}
+
