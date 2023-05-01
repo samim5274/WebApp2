@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "CourseRegistationForm";
+}
+
+<h2 class="alert alert-success">Course Register Form</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        @*<form asp-action="SaveData" asp-controller="Tedt" method="post">*@
+        <form action="/tedt/Registation" method="post">
+            <label>Name: </label>
+            <input type="text" name="StudentName" value="" class="form-control" /><br />
+            <label>Roll No: </label>
+            <input type="number" name="RollNo" value="" class="form-control" /><br />
+            <label>Department: </label>
+            <input type="text" name="Department" value="" class="form-control" /><br />
+            <label>Session: </label>
+            <input type="text" name="Session" value="" class="form-control" /><br />
+            <button type="submit" class="btn btn-success">Register</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "RegFrom";
+}
+
+<h2 class="alert alert-success">Register Form</h2>
+
+
+<div class="row">
+    <div class="col-md-4">
+        @*<form asp-action="SaveData" asp-controller="Tedt" method="post">*@
+            <form action="/tedt/SaveData" method="post">
+                <label>Name: </label>
+                <input type="text" name="stdName" value="" class="form-control" /><br />
+                <label>Age: </label>
+                <input type="number" name="stdAge" value="" class="form-control" /><br />
+                <label>Nationality: </label>
+                <input type="text" name="stdNationality" value="" class="form-control" /><br />
+                <button type="submit" class="btn btn-success">Register</button>
+            </form>
+    </div>
+</div>

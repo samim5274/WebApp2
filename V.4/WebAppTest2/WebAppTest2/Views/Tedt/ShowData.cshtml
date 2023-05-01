@@ -1,0 +1,34 @@
+﻿@model WebAppTest2.Models.Student
+@{
+    ViewBag.Title = "ShowData";
+}
+
+<h2 class="alert alert-info">Show Data</h2>
+
+<h3 class="text-info">Name : @Model.StudentName</h3>
+<h3 class="text-info">Roll No : @Model.RollNo</h3>
+<h3 class="text-info">Session : @Model.Session</h3>
+<h3 class="text-info">Department : @Model.Department</h3>
+
+<table class="table table-bordered table-responsive">
+    <tr>
+        <td>Student Name</td>
+        <td>:</td>
+        <td>@Model.StudentName</td>
+    </tr>
+    <tr>
+        <td>Roll No</td>
+        <td>:</td>
+        <td>@Model.RollNo</td>
+    </tr>
+    <tr>
+        <td>Session</td>
+        <td>:</td>
+        <td>@Model.Session</td>
+    </tr>
+    <tr>
+        <td>Department</td>
+        <td>:</td>
+        <td>@Model.Department</td>
+    </tr>
+</table>>
